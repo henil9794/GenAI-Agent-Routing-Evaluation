@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "prompt": "What was Amazon's total revenue for the fiscal year ended December 31, 2025?",
+    "label": "local",
+    "reasoning": "The answer can be found within the provided 10-K document"
+  },
+  {
+    "id": 2,
+    "prompt": "How has Amazon's AWS segment grown in terms of revenue over the past three years?",
+    "label": "web",
+    "reasoning": "This question requires real-time or post-filing information, such as current financial statements or recent news articles"
+  },
+  {
+    "id": 3,
+    "prompt": "What is Amazon's latest update on employee headcount and compensation packages?",
+    "label": "ambiguous",
+    "reasoning": "The answer may be partially contained within the provided 10-K document, but requires additional information to provide a complete answer"
+  },
+  {
+    "id": 4,
+    "prompt": "What are the primary risk factors that impact Amazon's business operations?",
+    "label": "local",
+    "reasoning": "The answer can be found within the provided 10-K document, specifically in the Risk Factors section"
+  },
+  {
+    "id": 5,
+    "prompt": "Is Amazon currently facing any legal proceedings or regulatory actions that could impact its business?",
+    "label": "web",
+    "reasoning": "This question requires real-time or post-filing information, such as current news articles or regulatory filings"
+  },
+  {
+    "id": 6,
+    "prompt": "What are some of the key products and services offered by Amazon's subsidiaries, such as Whole Foods Market?",
+    "label": "local",
+    "reasoning": "The answer can be found within the provided 10-K document, specifically in the Description of Business section"
+  },
+  {
+    "id": 7,
+    "prompt": "What is Amazon's current market capitalization and how has it changed over time?",
+    "label": "web",
+    "reasoning": "This question requires real-time or post-filing information, such as current stock prices or historical financial statements"
+  },
+  {
+    "id": 8,
+    "prompt": "How does Amazon's competition in the e-commerce and cloud computing industries impact its business?",
+    "label": "local",
+    "reasoning": "The answer can be found within the provided 10-K document, specifically in the Management's Discussion and Analysis section"
+  },
+  {
+    "id": 9,
+    "prompt": "What are Amazon's most recent efforts to address climate change and sustainability in its operations?",
+    "label": "ambiguous",
+    "reasoning": "The answer may be partially contained within the provided 10-K document, but requires additional information to provide a complete answer"
+  },
+  {
+    "id": 10,
+    "prompt": "How has Amazon's international expansion impacted its revenue and profitability?",
+    "label": "local",
+    "reasoning": "The answer can be found within the provided 10-K document, specifically in the Geographic Information section"
+  },
+  {
+    "id": 11,
+    "prompt": "What was Amazon's revenue in 2025?",
+    "label": "local",
+    "reasoning": "The answer is fully contained within the provided 10-K document."
+  },
+  {
+    "id": 12,
+    "prompt": "Is Amazon still using AWS for its cloud infrastructure?",
+    "label": "ambiguous",
+    "reasoning": "Routing is genuinely unclear; either source could plausibly answer the query."
+  },
+  {
+    "id": 13,
+    "prompt": "What is the current market value of Amazon's stock?",
+    "label": "web",
+    "reasoning": "The answer requires real-time or post-filing information (e.g., current stock price)."
+  },
+  {
+    "id": 14,
+    "prompt": "How many employees does Amazon have as of December 31, 2025?",
+    "label": "local",
+    "reasoning": "The answer is fully contained within the provided 10-K document."
+  },
+  {
+    "id": 15,
+    "prompt": "What are the main risk factors affecting Amazon's business in recent years?",
+    "label": "local",
+    "reasoning": "The answer is fully contained within the provided 10-K document."
+  },
+  {
+    "id": 16,
+    "prompt": "Is Amazon still involved in any ongoing legal disputes?",
+    "label": "ambiguous",
+    "reasoning": "Routing is genuinely unclear; either source could plausibly answer the query."
+  },
+  {
+    "id": 17,
+    "prompt": "What are some of the recent product developments at Amazon?",
+    "label": "local",
+    "reasoning": "The answer is fully contained within the provided 10-K document."
+  },
+  {
+    "id": 18,
+    "prompt": "How does Amazon's competition in the e-commerce market affect its business strategy?",
+    "label": "web",
+    "reasoning": "The answer requires real-time or post-filing information (e.g., current competitive landscape)."
+  },
+  {
+    "id": 19,
+    "prompt": "What is the current status of Amazon's tax contingency provisions as of December 31, 2025?",
+    "label": "local",
+    "reasoning": "The answer is fully contained within the provided 10-K document."
+  },
+  {
+    "id": 20,
+    "prompt": "Are there any recent changes to Amazon's financial reporting or accounting practices that have impacted its financial statements?",
+    "label": "ambiguous",
+    "reasoning": "Routing is genuinely unclear; either source could plausibly answer the query."
+  },
+  {
+    "id": 21,
+    "prompt": "What is Amazon's revenue breakdown by product category for the fiscal year ended December 31, 2025?",
+    "label": "local",
+    "reasoning": "The answer can be found in the 10-K filing"
+  },
+  {
+    "id": 22,
+    "prompt": "What are some of the risk factors that might affect Amazon's business going forward?",
+    "label": "local",
+    "reasoning": "The answer can be found in the 10-K filing, specifically in the Risk Factors section"
+  },
+  {
+    "id": 23,
+    "prompt": "Can you summarize Amazon's AWS segment financials for the fiscal year ended December 31, 2025?",
+    "label": "local",
+    "reasoning": "The answer can be found in the 10-K filing"
+  },
+  {
+    "id": 24,
+    "prompt": "What is Amazon's current approach to managing its tax contingencies?",
+    "label": "ambiguous",
+    "reasoning": "While some details are provided, more information would be needed to fully understand the company's tax strategy"
+  },
+  {
+    "id": 25,
+    "prompt": "How has Amazon's product lineup evolved over the past few years?",
+    "label": "local",
+    "reasoning": "The answer can be found in the 10-K filing, specifically in the Products and Services section"
+  },
+  {
+    "id": 26,
+    "prompt": "What is Amazon's competitive advantage in the e-commerce market?",
+    "label": "ambiguous",
+    "reasoning": "While some factors are mentioned, it's unclear whether they constitute a unique selling proposition"
+  },
+  {
+    "id": 27,
+    "prompt": "Can you provide an overview of Amazon's legal proceedings as of December 31, 2025?",
+    "label": "local",
+    "reasoning": "The answer can be found in the 10-K filing, specifically in the Legal Proceedings section"
+  },
+  {
+    "id": 28,
+    "prompt": "What is the current state of Amazon's research and development efforts in artificial intelligence?",
+    "label": "web",
+    "reasoning": "This information requires real-time data and cannot be obtained from the 10-K filing"
+  }
+]

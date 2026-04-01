@@ -1,0 +1,184 @@
+[
+  {
+    "id": 1,
+    "prompt": "What were Amazon's total net sales in fiscal year 2025?",
+    "label": "local",
+    "reasoning": "The exact figure of $716.9B is reported in the 10-K income statement."
+  },
+  {
+    "id": 2,
+    "prompt": "How many full-time and part-time employees did Amazon have as of December 31, 2025?",
+    "label": "local",
+    "reasoning": "The 10-K explicitly states approximately 1,576,000 employees as of that date."
+  },
+  {
+    "id": 3,
+    "prompt": "What are Amazon's three reportable business segments?",
+    "label": "local",
+    "reasoning": "The 10-K clearly defines the three segments as North America, International, and AWS."
+  },
+  {
+    "id": 4,
+    "prompt": "How much did Amazon invest in Anthropic through convertible notes between 2023 and 2025?",
+    "label": "local",
+    "reasoning": "The 10-K details total investments of approximately $8.7B in Anthropic across multiple tranches."
+  },
+  {
+    "id": 5,
+    "prompt": "What was AWS operating income in 2025 compared to 2024?",
+    "label": "local",
+    "reasoning": "Both figures ($45.6B and $39.8B) are directly reported in the segment information table."
+  },
+  {
+    "id": 6,
+    "prompt": "Who is the CEO of Amazon Web Services as of January 2026?",
+    "label": "local",
+    "reasoning": "The 10-K executive officer table lists Matthew S. Garman as CEO of AWS as of January 28, 2026."
+  },
+  {
+    "id": 7,
+    "prompt": "What was the FTC lawsuit settlement amount Amazon recorded in Q3 2025?",
+    "label": "local",
+    "reasoning": "The 10-K explicitly states a $2.5B charge recorded in Q3 2025 for the FTC settlement."
+  },
+  {
+    "id": 8,
+    "prompt": "What is Amazon's primary stock exchange and ticker symbol?",
+    "label": "local",
+    "reasoning": "The 10-K cover page states AMZN trades on the Nasdaq Global Select Market."
+  },
+  {
+    "id": 9,
+    "prompt": "By what percentage did AWS net sales grow year-over-year in 2025?",
+    "label": "local",
+    "reasoning": "The 10-K net sales table shows AWS grew exactly 20% from $107.6B to $128.7B."
+  },
+  {
+    "id": 10,
+    "prompt": "What was Amazon's free cash flow in 2025 and how did it compare to 2024?",
+    "label": "local",
+    "reasoning": "The 10-K non-GAAP section reports $11.2B in 2025 vs $38.2B in 2024, a significant decline."
+  },
+
+  {
+    "id": 11,
+    "prompt": "What is Amazon's current stock price?",
+    "label": "web",
+    "reasoning": "Stock prices are real-time data not available in a static 10-K filing."
+  },
+  {
+    "id": 12,
+    "prompt": "Has Amazon announced any acquisitions in early 2026?",
+    "label": "web",
+    "reasoning": "Post-filing acquisition activity requires a web search for current news."
+  },
+  {
+    "id": 13,
+    "prompt": "How is Amazon's stock performing compared to Microsoft and Google this quarter?",
+    "label": "web",
+    "reasoning": "Current quarter stock comparisons require live market data beyond the 10-K."
+  },
+  {
+    "id": 14,
+    "prompt": "What is the latest analyst rating for AMZN stock?",
+    "label": "web",
+    "reasoning": "Analyst ratings are updated continuously and cannot be found in a filed 10-K."
+  },
+  {
+    "id": 15,
+    "prompt": "Did Amazon hit its Q1 2026 revenue guidance of $173.5B to $178.5B?",
+    "label": "web",
+    "reasoning": "Q1 2026 actual results are post-filing and require a web search to verify."
+  },
+  {
+    "id": 16,
+    "prompt": "What is the current status of Amazon's Luxembourg GDPR fine appeal?",
+    "label": "web",
+    "reasoning": "The appeal was filed in April 2025 and ongoing developments require real-time lookup."
+  },
+  {
+    "id": 17,
+    "prompt": "Who are Amazon's top competitors in cloud computing right now?",
+    "label": "web",
+    "reasoning": "Current competitive landscape shifts rapidly and requires up-to-date market information."
+  },
+  {
+    "id": 18,
+    "prompt": "What is Amazon's market capitalization today?",
+    "label": "web",
+    "reasoning": "Market cap is calculated from the live stock price and cannot be found in the 10-K."
+  },
+  {
+    "id": 19,
+    "prompt": "Has Amazon released any new AI products or services in 2026?",
+    "label": "web",
+    "reasoning": "Post-filing product launches require a web search for current announcements."
+  },
+  {
+    "id": 20,
+    "prompt": "What is the current price of Amazon Prime membership?",
+    "label": "web",
+    "reasoning": "Membership pricing can change at any time and is not locked in the 10-K filing."
+  },
+
+  {
+    "id": 21,
+    "prompt": "Is Amazon still investing in Anthropic?",
+    "label": "ambiguous",
+    "reasoning": "The 10-K details past investments through Q4 2025, but 'still' implies current status that may need web verification."
+  },
+  {
+    "id": 22,
+    "prompt": "What is Amazon's current headcount?",
+    "label": "ambiguous",
+    "reasoning": "The 10-K reports 1.576M as of Dec 31 2025, but 'current' suggests the user may want a more recent figure."
+  },
+  {
+    "id": 23,
+    "prompt": "How is Amazon Leo performing in the market?",
+    "label": "ambiguous",
+    "reasoning": "Amazon Leo is mentioned in 2026 guidance in the 10-K, but market performance details would require web search."
+  },
+  {
+    "id": 24,
+    "prompt": "What are the latest risk factors facing Amazon's international operations?",
+    "label": "ambiguous",
+    "reasoning": "The 10-K has a detailed risk factors section, but 'latest' implies the user may want post-filing updates."
+  },
+  {
+    "id": 25,
+    "prompt": "How much has Amazon spent on AI infrastructure recently?",
+    "label": "ambiguous",
+    "reasoning": "The 10-K reports $128.3B capex for 2025, but 'recently' could mean more current spending data."
+  },
+  {
+    "id": 26,
+    "prompt": "Is Andrew Jassy still the CEO of Amazon?",
+    "label": "ambiguous",
+    "reasoning": "The 10-K confirms he was CEO as of Jan 28 2026, but 'still' prompts verification of current status."
+  },
+  {
+    "id": 27,
+    "prompt": "What is Amazon's current debt level?",
+    "label": "ambiguous",
+    "reasoning": "The 10-K reports $65.6B long-term debt as of Dec 31 2025, but debt levels change with new issuances."
+  },
+  {
+    "id": 28,
+    "prompt": "How is Amazon handling tariff risks in 2026?",
+    "label": "ambiguous",
+    "reasoning": "The 10-K discusses tariff risks extensively, but 2026 responses may have been reported in recent news."
+  },
+  {
+    "id": 29,
+    "prompt": "What is the current size of Amazon's fulfillment network?",
+    "label": "ambiguous",
+    "reasoning": "The 10-K lists properties as of Dec 31 2025, but 'current' may suggest the user wants more recent expansion data."
+  },
+  {
+    "id": 30,
+    "prompt": "How competitive is AWS compared to Azure and Google Cloud today?",
+    "label": "ambiguous",
+    "reasoning": "The 10-K provides AWS financials and mentions competition, but 'today' suggests the user may want current market share data."
+  }
+]

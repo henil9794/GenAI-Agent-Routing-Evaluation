@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "label": "local",
+    "prompt": "What were Amazon's total net sales for the most recent fiscal year reported in the 10-K?",
+    "reasoning": "Directly stated in the financial statements section of the 10-K filing."
+  },
+  {
+    "id": 2,
+    "label": "local",
+    "prompt": "How does Amazon describe its competitive landscape in the 10-K risk factors?",
+    "reasoning": "Risk factors are a standard section within the 10-K document."
+  },
+  {
+    "id": 3,
+    "label": "local",
+    "prompt": "What are the reportable business segments listed in Amazon's 10-K?",
+    "reasoning": "Segment reporting is explicitly detailed in the notes to financial statements."
+  },
+  {
+    "id": 4,
+    "label": "local",
+    "prompt": "What was Amazon Web Services' operating income as reported in the annual filing?",
+    "reasoning": "AWS financials are broken out in the segment results within the 10-K."
+  },
+  {
+    "id": 5,
+    "label": "local",
+    "prompt": "What depreciation method does Amazon use for its property and equipment?",
+    "reasoning": "Accounting policies are disclosed in the significant accounting policies note."
+  },
+  {
+    "id": 6,
+    "label": "local",
+    "prompt": "What long-term debt obligations does Amazon report in the 10-K balance sheet?",
+    "reasoning": "Long-term debt is a line item on the consolidated balance sheet."
+  },
+  {
+    "id": 7,
+    "label": "local",
+    "prompt": "How many full-time and part-time employees does Amazon report in the filing?",
+    "reasoning": "Employee headcount is disclosed in the business overview or Item 1 of the 10-K."
+  },
+  {
+    "id": 8,
+    "label": "local",
+    "prompt": "What are the key assumptions Amazon uses for its lease obligations?",
+    "reasoning": "Lease accounting details are in the notes to financial statements."
+  },
+  {
+    "id": 9,
+    "label": "local",
+    "prompt": "What was Amazon's effective tax rate for the fiscal year per the 10-K?",
+    "reasoning": "Tax rate reconciliation is explicitly provided in the income tax footnote."
+  },
+  {
+    "id": 10,
+    "label": "local",
+    "prompt": "What goodwill and intangible assets does Amazon carry on its balance sheet?",
+    "reasoning": "These are specific line items in the consolidated balance sheet and supporting notes."
+  },
+  {
+    "id": 11,
+    "label": "web",
+    "prompt": "What is Amazon's stock price as of today?",
+    "reasoning": "Real-time stock prices require a live web query; this is not in any static filing."
+  },
+  {
+    "id": 12,
+    "label": "web",
+    "prompt": "What did analysts say about Amazon's most recent quarterly earnings call?",
+    "reasoning": "Analyst commentary is published after earnings calls and requires real-time news search."
+  },
+  {
+    "id": 13,
+    "label": "web",
+    "prompt": "Has the FTC filed any new antitrust actions against Amazon this year?",
+    "reasoning": "Regulatory actions are breaking news events not covered in the static 10-K."
+  },
+  {
+    "id": 14,
+    "label": "web",
+    "prompt": "What is the current market share of AWS compared to Azure and Google Cloud?",
+    "reasoning": "Market share data changes quarterly and comes from third-party research firms."
+  },
+  {
+    "id": 15,
+    "label": "web",
+    "prompt": "What new AI services has AWS launched in the last 6 months?",
+    "reasoning": "Product launches happen post-filing and require real-time web search."
+  },
+  {
+    "id": 16,
+    "label": "web",
+    "prompt": "What are the latest customer reviews about Amazon's delivery speed?",
+    "reasoning": "Customer sentiment is dynamic, crowd-sourced, and not in any SEC filing."
+  },
+  {
+    "id": 17,
+    "label": "web",
+    "prompt": "How has Amazon's stock performed relative to the S&P 500 this quarter?",
+    "reasoning": "Relative stock performance is a real-time comparison requiring live market data."
+  },
+  {
+    "id": 18,
+    "label": "web",
+    "prompt": "Are there any ongoing Amazon warehouse worker strikes currently?",
+    "reasoning": "Labor actions are current events requiring live news search."
+  },
+  {
+    "id": 19,
+    "label": "web",
+    "prompt": "What is the current consensus price target for AMZN among Wall Street analysts?",
+    "reasoning": "Analyst price targets are updated frequently and sourced from financial data providers."
+  },
+  {
+    "id": 20,
+    "label": "web",
+    "prompt": "What new countries has Amazon expanded its marketplace to recently?",
+    "reasoning": "Geographic expansion announcements happen post-filing and need web search."
+  },
+  {
+    "id": 21,
+    "label": "ambiguous",
+    "prompt": "How is Amazon addressing climate change risks?",
+    "reasoning": "The 10-K may mention climate risks, but recent pledges and progress updates require web search."
+  },
+  {
+    "id": 22,
+    "label": "ambiguous",
+    "prompt": "What is Amazon's strategy for competing in the grocery market?",
+    "reasoning": "The 10-K outlines business segments, but recent acquisitions and partnerships need web lookup."
+  },
+  {
+    "id": 23,
+    "label": "ambiguous",
+    "prompt": "How does Amazon handle data privacy and user data protection?",
+    "reasoning": "The 10-K has risk disclosures, but current policies and regulatory compliance need web context."
+  },
+  {
+    "id": 24,
+    "label": "ambiguous",
+    "prompt": "What is the outlook for Amazon's advertising business?",
+    "reasoning": "The 10-K reports ad revenue, but forward-looking analyst estimates require web search."
+  },
+  {
+    "id": 25,
+    "label": "ambiguous",
+    "prompt": "Is Amazon's cloud business growing faster than its competitors?",
+    "reasoning": "The 10-K has AWS growth rates, but comparative competitor data needs external sources."
+  },
+  {
+    "id": 26,
+    "label": "ambiguous",
+    "prompt": "What are the biggest regulatory threats facing Amazon right now?",
+    "reasoning": "Risk factors are in the 10-K, but active regulatory proceedings need real-time search."
+  },
+  {
+    "id": 27,
+    "label": "ambiguous",
+    "prompt": "How profitable is Amazon Prime as a subscription service?",
+    "reasoning": "The 10-K includes subscription revenue, but unit economics and churn data may need web sources."
+  },
+  {
+    "id": 28,
+    "label": "ambiguous",
+    "prompt": "What investments is Amazon making in robotics and warehouse automation?",
+    "reasoning": "CapEx is in the 10-K, but specific robotics projects and recent announcements need web search."
+  },
+  {
+    "id": 29,
+    "label": "ambiguous",
+    "prompt": "How does Amazon's revenue growth compare to its historical trends?",
+    "reasoning": "Historical data is in the 10-K, but trend analysis and macro context benefit from external data."
+  },
+  {
+    "id": 30,
+    "label": "ambiguous",
+    "prompt": "What role does generative AI play in Amazon's current product roadmap?",
+    "reasoning": "The 10-K may mention AI broadly, but specific product launches and timelines require web search."
+  }
+]
