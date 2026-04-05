@@ -1,43 +1,59 @@
-"""
-NFR04: Single entry-point script. Run everything from here.
-       Fixed random seed is set inside src/agent.py (SEED=42).
-"""
+import os
+import chromadb
+from src.data_loader import build_vector_db
+from src.utils import load_config, setup_logging
+from src.evaluator import load_dataset, evaluate_routers, compute_metrics, save_json
+from src.baselines import rule_based_router, zero_shot_llm_router
+from src.agent_router import build_langgraph_agent
+import pandas as pd
+import logging; logger = logging.getLogger(__name__)
 
-import argparse
-from dotenv import load_dotenv
-load_dotenv()
+setup_logging()
+config = load_config()
+
+def load_collection(config):
+    """Load ChromaDB collection, building it first if it doesn't exist."""
+    if not os.path.exists(config["vector_db"]["persist_directory"]):
+        return build_vector_db(config)
+    chroma_client = chromadb.PersistentClient(path=config["vector_db"]["persist_directory"])
+    return chroma_client.get_or_create_collection(name=config["vector_db"]["collection_name"])
 
 def main():
-    parser = argparse.ArgumentParser(description="Agentic RAG Evaluation Pipeline")
-    parser.add_argument("--mode", required=True,
-                        choices=["index", "query", "evaluate"],
-                        help="Pipeline stage to run")
-    parser.add_argument("--query",   type=str, help="Single query (for --mode query)")
-    parser.add_argument("--model",   type=str, default="llama3",
-                        choices=["llama3", "mistral"], help="Ollama model to use")
-    parser.add_argument("--variant", type=str, default="baseline_prompt",
-                        choices=["baseline_prompt", "cot_prompt", "ambiguity_prompt"],
-                        help="Prompt engineering variant (for --mode query)")
-    parser.add_argument("--dataset", type=str, default="data/eval_dataset.csv")
-    parser.add_argument("--output",  type=str, default="./results")
-    args = parser.parse_args()
+    logger.info("Starting Agentic RAG Routing Evaluation")
 
-    if args.mode == "index":
-        from src.indexer import build_vectorstore
-        build_vectorstore("data/raw_pdfs/")
+    # 1. Init Vector DB (run once) and keep the collection handle
+    collection = load_collection(config)
 
-    elif args.mode == "query":
-        from src.agent import run_query
-        result = run_query(args.query, model_name=args.model,
-                           prompt_variant=args.variant)
-        print(f"\nTool used : {result['tool_used']}")
-        print(f"Answer    : {result['answer']}")
+    # 2. Load Dataset
+    dataset = load_dataset()
+    logger.info(f"Loaded {len(dataset)} prompts.")
 
-    elif args.mode == "evaluate":
-        from src.evaluator import run_full_evaluation
-        # Run for specified model (run twice manually for llama3 + mistral comparison)
-        run_full_evaluation(args.dataset, model_name=args.model,
-                            output_dir=args.output)
+    # 3. Define Routers
+    models = [config["llm"]["models"]["primary"], config["llm"]["models"]["secondary"]]
+    for model_name in models:
+        logger.info(f"Evaluating model: {model_name}")
+
+        langgraph_agent = build_langgraph_agent(model_name, collection=collection)
+        routers = {
+            "rule_based": rule_based_router,
+            "zero_shot_llm": lambda q: zero_shot_llm_router(q, model_name),
+            "langgraph_agent": lambda q: langgraph_agent.invoke({
+                "query": q,
+                "routing_decision": "",
+                "reasoning": "",
+                "retrieved_docs": [],
+                "final_answer": ""
+            })
+        }
+        
+        results_df = evaluate_routers(dataset, model_name, routers)
+        metrics = compute_metrics(results_df, model_name)
+        
+        out_dir = "./data/results"
+        os.makedirs(out_dir, exist_ok=True)
+        results_df.to_csv(f"{out_dir}/routing_results_{model_name.replace('/', '_')}.csv", index=False)
+        save_json(metrics, f"{out_dir}/metrics_{model_name.replace('/', '_')}.json")
+        logger.info(f"Saved results & metrics for {model_name}")
 
 if __name__ == "__main__":
     main()

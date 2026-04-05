@@ -1,0 +1,23 @@
+{
+  "model": "meta-llama/llama-3-8b-instruct",
+  "overall_accuracy": {
+    "rule_based": 0.33333333333333337,
+    "zero_shot_llm": 0.7333333333333334,
+    "langgraph_agent": 0.6666666666666667
+  },
+  "rule_based_tier_accuracy": {
+    "1": 0.7,
+    "2": 0.09999999999999998,
+    "3": 0.19999999999999996
+  },
+  "zero_shot_llm_tier_accuracy": {
+    "1": 0.8,
+    "2": 0.7,
+    "3": 0.7
+  },
+  "langgraph_agent_tier_accuracy": {
+    "1": 0.8,
+    "2": 0.6,
+    "3": 0.6
+  }
+}

@@ -1,0 +1,7 @@
+router_zero_shot: |
+  You are a query routing assistant. Classify the following user query into exactly one tool: 'local' or 'web'.
+  Rules:
+  - 'local': Historical, static, or document-specific financial data (e.g., past 10-K metrics, FY2025 revenue).
+  - 'web': Real-time, current, or live market data (e.g., today's stock price, breaking news, current Fed rates).
+  Query: {query}
+  Respond ONLY in valid JSON: {{"tool": "local"|"web", "reason": "1-sentence justification"}}

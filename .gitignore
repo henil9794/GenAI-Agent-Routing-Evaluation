@@ -10,10 +10,10 @@ build/
 .venv/
 venv/
 env/
-data/raw_pdfs/
+data/raw*
 data/tavily_cache.json
 tavily_cache.json
-results/
 *.chroma/
 chroma_db/
 .DS_Store
+*.csv
