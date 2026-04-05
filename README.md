@@ -85,11 +85,11 @@ pip install -r requirements.txt
 Create a `.env` file in the project root:
 
 ```env
-OPENAI_API_KEY=<your_openrouter_api_key>
+OPENROUTER_API_KEY=<your_openrouter_api_key>
 TAVILY_API_KEY=<your_tavily_api_key>
 ```
 
-The project routes LLM calls through [OpenRouter](https://openrouter.ai), so `OPENAI_API_KEY` should be your OpenRouter key.
+The project routes LLM calls through [OpenRouter](https://openrouter.ai), so `OPENROUTER_API_KEY` should be your OpenRouter key.
 
 ### 4. (Optional) Adjust settings
 
@@ -147,7 +147,7 @@ llm:
     primary: "meta-llama/llama-3-8b-instruct"
     secondary: "openai/gpt-4o-mini"
   base_url: "https://openrouter.ai/api/v1"
-  api_key_env: "OPENAI_API_KEY"
+  api_key_env: "OPENROUTER_API_KEY"
   temperature: 0.0
   max_tokens: 150
 

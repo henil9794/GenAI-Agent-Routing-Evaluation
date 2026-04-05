@@ -1,4 +1,5 @@
 import json
+import re
 from typing import TypedDict, Literal, List, Dict, Any
 from langgraph.graph import StateGraph, START, END
 from src.utils import get_openai_client, load_config, load_prompts
@@ -24,7 +25,13 @@ def router_node(state: RouterState, model_name: str) -> RouterState:
         max_tokens=config["llm"]["max_tokens"]
     )
     try:
-        data = json.loads(response.choices[0].message.content.strip())
+        # data = json.loads(response.choices[0].message.content.strip())
+        
+        content = response.choices[0].message.content.strip()
+        # Strip markdown code fences that larger models add
+        content = re.sub(r"^```(?:json)?\s*|\s*```$", "", content, flags=re.DOTALL)
+        data = json.loads(content)
+
         return {**state, "routing_decision": data["tool"], "reasoning": data.get("reason", "")}
     except Exception:
         return {**state, "routing_decision": "uncertain", "reasoning": "Parse fallback"}

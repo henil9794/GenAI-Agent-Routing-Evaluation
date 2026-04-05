@@ -29,7 +29,7 @@ def main():
     logger.info(f"Loaded {len(dataset)} prompts.")
 
     # 3. Define Routers
-    models = [config["llm"]["models"]["primary"], config["llm"]["models"]["secondary"]]
+    models = [config["llm"]["models"]["primary"], config["llm"]["models"]["secondary"], config["llm"]["models"]["tertiary"]]
     for model_name in models:
         logger.info(f"Evaluating model: {model_name}")
 

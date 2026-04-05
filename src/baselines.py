@@ -26,6 +26,7 @@ def zero_shot_llm_router(query: str, model_name: str) -> dict:
         max_tokens=config["llm"]["max_tokens"]
     )
     content = response.choices[0].message.content.strip()
+    content = re.sub(r"^```(?:json)?\s*|\s*```$", "", content, flags=re.DOTALL).strip()
     try:
         return json.loads(content)
     except json.JSONDecodeError:

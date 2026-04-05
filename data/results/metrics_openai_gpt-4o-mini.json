@@ -2,8 +2,8 @@
   "model": "openai/gpt-4o-mini",
   "overall_accuracy": {
     "rule_based": 0.36,
-    "zero_shot_llm": 0.81,
-    "langgraph_agent": 0.8
+    "zero_shot_llm": 0.8,
+    "langgraph_agent": 0.79
   },
   "rule_based_tier_accuracy": {
     "1": 0.7,
@@ -12,12 +12,12 @@
   },
   "zero_shot_llm_tier_accuracy": {
     "1": 1.0,
-    "2": 0.7666666666666666,
-    "3": 0.6
+    "2": 0.7,
+    "3": 0.6333333333333333
   },
   "langgraph_agent_tier_accuracy": {
     "1": 1.0,
-    "2": 0.7333333333333334,
+    "2": 0.7,
     "3": 0.6
   }
 }
