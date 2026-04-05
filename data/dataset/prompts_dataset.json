@@ -208,5 +208,495 @@
     "ambiguity_tier": 3,
     "ground_truth": "local",
     "prompt_tags": ["alphabet", "bare_query", "other_bets", "highly_vague", "local_doc_or_recent_news"]
+  },
+  {
+    "query_id": 31,
+    "prompt": "How many full-time equivalent employees did Apple report worldwide as of the end of fiscal year 2025?",
+    "ambiguity_tier": 1,
+    "ground_truth": "local",
+    "prompt_tags": ["apple", "headcount", "10K_fact", "specific_date", "local_doc"]
+  },
+  {
+    "query_id": 32,
+    "prompt": "What are the three geographic reporting segments Cisco uses to break out its revenue in its FY2025 annual report?",
+    "ambiguity_tier": 1,
+    "ground_truth": "local",
+    "prompt_tags": ["cisco", "geographic_segments", "10K_fact", "organizational_structure", "local_doc"]
+  },
+  {
+    "query_id": 33,
+    "prompt": "What was Dell Technologies' total net revenue for fiscal year 2025 as stated in its 10-K filing?",
+    "ambiguity_tier": 1,
+    "ground_truth": "local",
+    "prompt_tags": ["dell", "total_revenue", "10K_fact", "financials", "local_doc"]
+  },
+  {
+    "query_id": 34,
+    "prompt": "What was the total number of orders placed on DoorDash's platform in fiscal year 2025 according to its annual report?",
+    "ambiguity_tier": 1,
+    "ground_truth": "local",
+    "prompt_tags": ["doordash", "order_volume", "10K_fact", "platform_metrics", "local_doc"]
+  },
+  {
+    "query_id": 35,
+    "prompt": "How many retail store locations did GameStop operate globally as of the end of fiscal year 2025 per its 10-K?",
+    "ambiguity_tier": 1,
+    "ground_truth": "local",
+    "prompt_tags": ["gamestop", "store_count", "10K_fact", "specific_date", "local_doc"]
+  },
+  {
+    "query_id": 36,
+    "prompt": "What two reportable segments does HP Inc. organize its operations into according to its FY2025 10-K filing?",
+    "ambiguity_tier": 1,
+    "ground_truth": "local",
+    "prompt_tags": ["hp", "business_segments", "10K_fact", "organizational_structure", "local_doc"]
+  },
+  {
+    "query_id": 37,
+    "prompt": "What were IBM's total revenues for fiscal year 2025 as reported in its annual filing?",
+    "ambiguity_tier": 1,
+    "ground_truth": "local",
+    "prompt_tags": ["ibm", "total_revenue", "10K_fact", "financials", "local_doc"]
+  },
+  {
+    "query_id": 38,
+    "prompt": "What three primary business segments does Microsoft report in its FY2025 annual report?",
+    "ambiguity_tier": 1,
+    "ground_truth": "local",
+    "prompt_tags": ["microsoft", "business_segments", "10K_fact", "organizational_structure", "local_doc"]
+  },
+  {
+    "query_id": 39,
+    "prompt": "How many paid memberships did Netflix report globally as of December 31, 2025 in its annual filing?",
+    "ambiguity_tier": 1,
+    "ground_truth": "local",
+    "prompt_tags": ["netflix", "paid_memberships", "10K_fact", "specific_date", "local_doc"]
+  },
+  {
+    "query_id": 40,
+    "prompt": "What was Pinterest's global monthly active user count as reported in its FY2025 annual filing?",
+    "ambiguity_tier": 1,
+    "ground_truth": "local",
+    "prompt_tags": ["pinterest", "monthly_active_users", "10K_fact", "platform_metrics", "local_doc"]
+  },
+  {
+    "query_id": 41,
+    "prompt": "What are the two reportable segments Qualcomm identifies in its FY2025 10-K filing?",
+    "ambiguity_tier": 1,
+    "ground_truth": "local",
+    "prompt_tags": ["qualcomm", "business_segments", "10K_fact", "organizational_structure", "local_doc"]
+  },
+  {
+    "query_id": 42,
+    "prompt": "What was Roblox's daily active user count as of December 31, 2025 as reported in its FY2025 annual report?",
+    "ambiguity_tier": 1,
+    "ground_truth": "local",
+    "prompt_tags": ["roblox", "daily_active_users", "10K_fact", "specific_date", "local_doc"]
+  },
+  {
+    "query_id": 43,
+    "prompt": "What was Salesforce's total revenue for fiscal year 2025 as reported in its 10-K annual filing?",
+    "ambiguity_tier": 1,
+    "ground_truth": "local",
+    "prompt_tags": ["salesforce", "total_revenue", "10K_fact", "financials", "local_doc"]
+  },
+  {
+    "query_id": 44,
+    "prompt": "What was Snowflake's total product revenue for fiscal year 2025 according to its annual report?",
+    "ambiguity_tier": 1,
+    "ground_truth": "local",
+    "prompt_tags": ["snowflake", "product_revenue", "10K_fact", "financials", "local_doc"]
+  },
+  {
+    "query_id": 45,
+    "prompt": "How many trips did Uber complete globally in fiscal year 2025 as disclosed in its annual filing?",
+    "ambiguity_tier": 1,
+    "ground_truth": "local",
+    "prompt_tags": ["uber", "trip_volume", "10K_fact", "platform_metrics", "local_doc"]
+  },
+  {
+    "query_id": 46,
+    "prompt": "What is Visa's current stock price as of today?",
+    "ambiguity_tier": 1,
+    "ground_truth": "web",
+    "prompt_tags": ["visa", "stock_price", "real_time", "financial_market", "web_only"]
+  },
+  {
+    "query_id": 47,
+    "prompt": "What promotions or sale events has Wayfair announced in the last 30 days?",
+    "ambiguity_tier": 1,
+    "ground_truth": "web",
+    "prompt_tags": ["wayfair", "recent_news", "promotions", "post_filing", "web_only"]
+  },
+  {
+    "query_id": 48,
+    "prompt": "What new hardware products has Apple announced or released in the last 30 days?",
+    "ambiguity_tier": 1,
+    "ground_truth": "web",
+    "prompt_tags": ["apple", "product_launch", "recent_news", "post_filing", "web_only"]
+  },
+  {
+    "query_id": 49,
+    "prompt": "What is Microsoft's current market capitalization?",
+    "ambiguity_tier": 1,
+    "ground_truth": "web",
+    "prompt_tags": ["microsoft", "market_cap", "real_time", "financial_market", "web_only"]
+  },
+  {
+    "query_id": 50,
+    "prompt": "What new original shows or movies did Netflix release this week?",
+    "ambiguity_tier": 1,
+    "ground_truth": "web",
+    "prompt_tags": ["netflix", "content_releases", "real_time", "post_filing", "web_only"]
+  },
+  {
+    "query_id": 51,
+    "prompt": "What is Uber's current Wall Street analyst consensus price target?",
+    "ambiguity_tier": 1,
+    "ground_truth": "web",
+    "prompt_tags": ["uber", "analyst_ratings", "real_time", "investment", "web_only"]
+  },
+  {
+    "query_id": 52,
+    "prompt": "Has Salesforce announced any acquisitions or major partnerships in 2026?",
+    "ambiguity_tier": 1,
+    "ground_truth": "web",
+    "prompt_tags": ["salesforce", "acquisitions", "recent_news", "post_filing", "web_only"]
+  },
+  {
+    "query_id": 53,
+    "prompt": "What is IBM's current trailing twelve-month earnings per share?",
+    "ambiguity_tier": 1,
+    "ground_truth": "web",
+    "prompt_tags": ["ibm", "EPS", "real_time", "financial_market", "web_only"]
+  },
+  {
+    "query_id": 54,
+    "prompt": "What cybersecurity vulnerabilities or threats has Cisco publicly disclosed or warned about in the past month?",
+    "ambiguity_tier": 1,
+    "ground_truth": "web",
+    "prompt_tags": ["cisco", "cybersecurity", "recent_news", "post_filing", "web_only"]
+  },
+  {
+    "query_id": 55,
+    "prompt": "What is Dell's current price-to-earnings ratio based on the latest market data?",
+    "ambiguity_tier": 1,
+    "ground_truth": "web",
+    "prompt_tags": ["dell", "valuation_metric", "real_time", "financial_market", "web_only"]
+  },
+  {
+    "query_id": 56,
+    "prompt": "What new cities or international markets has DoorDash expanded into in 2026?",
+    "ambiguity_tier": 1,
+    "ground_truth": "web",
+    "prompt_tags": ["doordash", "expansion", "recent_news", "post_filing", "web_only"]
+  },
+  {
+    "query_id": 57,
+    "prompt": "What new advertising or creator monetization features has Pinterest launched recently?",
+    "ambiguity_tier": 1,
+    "ground_truth": "web",
+    "prompt_tags": ["pinterest", "advertising", "recent_news", "post_filing", "web_only"]
+  },
+  {
+    "query_id": 58,
+    "prompt": "Which recent chip licensing deal or OEM partnership has Qualcomm announced?",
+    "ambiguity_tier": 1,
+    "ground_truth": "web",
+    "prompt_tags": ["qualcomm", "partnerships", "recent_news", "post_filing", "web_only"]
+  },
+  {
+    "query_id": 59,
+    "prompt": "What major brand collaborations or gaming events has Roblox announced this quarter?",
+    "ambiguity_tier": 1,
+    "ground_truth": "web",
+    "prompt_tags": ["roblox", "collaborations", "recent_news", "post_filing", "web_only"]
+  },
+  {
+    "query_id": 60,
+    "prompt": "What product or partnership announcements has Snowflake made at its most recent investor or developer event?",
+    "ambiguity_tier": 1,
+    "ground_truth": "web",
+    "prompt_tags": ["snowflake", "announcements", "recent_news", "post_filing", "web_only"]
+  },
+  {
+    "query_id": 61,
+    "prompt": "What are GameStop's main revenue streams and how has the business shifted toward digital sales?",
+    "ambiguity_tier": 2,
+    "ground_truth": "local",
+    "prompt_tags": ["gamestop", "revenue_streams", "digital_transition", "local_doc_or_web_analysis", "business_model"]
+  },
+  {
+    "query_id": 62,
+    "prompt": "How does Apple's Services segment contribute to its overall revenue compared to iPhone hardware sales?",
+    "ambiguity_tier": 2,
+    "ground_truth": "local",
+    "prompt_tags": ["apple", "services_segment", "revenue_mix", "local_doc_or_web_summary", "financials"]
+  },
+  {
+    "query_id": 63,
+    "prompt": "What is Microsoft's strategy for growing Azure cloud services in competition with AWS and Google Cloud?",
+    "ambiguity_tier": 2,
+    "ground_truth": "web",
+    "prompt_tags": ["microsoft", "azure", "cloud_strategy", "competitive_analysis", "current_market_or_local_doc"]
+  },
+  {
+    "query_id": 64,
+    "prompt": "What is Netflix's approach to content spending and how does it impact the company's path to profitability?",
+    "ambiguity_tier": 2,
+    "ground_truth": "local",
+    "prompt_tags": ["netflix", "content_spend", "profitability", "local_doc_or_web_analysis", "financials"]
+  },
+  {
+    "query_id": 65,
+    "prompt": "How does Uber Eats contribute to Uber's total gross bookings and overall business mix?",
+    "ambiguity_tier": 2,
+    "ground_truth": "local",
+    "prompt_tags": ["uber", "uber_eats", "gross_bookings", "local_doc_or_web_summary", "segment_breakdown"]
+  },
+  {
+    "query_id": 66,
+    "prompt": "How does Visa's global payment network compare to Mastercard's in terms of transaction volume and market share?",
+    "ambiguity_tier": 2,
+    "ground_truth": "web",
+    "prompt_tags": ["visa", "competitive_analysis", "mastercard", "current_market_or_local_doc", "payments"]
+  },
+  {
+    "query_id": 67,
+    "prompt": "What is IBM's strategy for growing its hybrid cloud and AI consulting business?",
+    "ambiguity_tier": 2,
+    "ground_truth": "local",
+    "prompt_tags": ["ibm", "hybrid_cloud", "AI_consulting", "local_doc_or_web_analysis", "strategy"]
+  },
+  {
+    "query_id": 68,
+    "prompt": "How has Salesforce's acquisition of Slack changed its product strategy and enterprise offerings?",
+    "ambiguity_tier": 2,
+    "ground_truth": "web",
+    "prompt_tags": ["salesforce", "slack_acquisition", "product_strategy", "recent_web_or_local_doc", "enterprise"]
+  },
+  {
+    "query_id": 69,
+    "prompt": "What industries are Snowflake's largest customers concentrated in according to its annual report?",
+    "ambiguity_tier": 2,
+    "ground_truth": "local",
+    "prompt_tags": ["snowflake", "customer_concentration", "industry_verticals", "local_doc_or_web_summary", "enterprise"]
+  },
+  {
+    "query_id": 70,
+    "prompt": "What is DoorDash's take rate and how does it compare to competitors like Uber Eats and Grubhub?",
+    "ambiguity_tier": 2,
+    "ground_truth": "web",
+    "prompt_tags": ["doordash", "take_rate", "competitive_analysis", "current_market_or_local_doc", "unit_economics"]
+  },
+  {
+    "query_id": 71,
+    "prompt": "How does Pinterest monetize its platform and what is its average revenue per user?",
+    "ambiguity_tier": 2,
+    "ground_truth": "local",
+    "prompt_tags": ["pinterest", "monetization", "ARPU", "local_doc_or_web_summary", "advertising"]
+  },
+  {
+    "query_id": 72,
+    "prompt": "How dependent is Qualcomm on Apple as a customer for its semiconductor revenues?",
+    "ambiguity_tier": 2,
+    "ground_truth": "web",
+    "prompt_tags": ["qualcomm", "apple_dependency", "customer_concentration", "current_market_or_local_doc", "semiconductors"]
+  },
+  {
+    "query_id": 73,
+    "prompt": "How does Roblox's developer economy work and what role does the Robux virtual currency play?",
+    "ambiguity_tier": 2,
+    "ground_truth": "local",
+    "prompt_tags": ["roblox", "developer_economy", "robux", "local_doc_or_web_explainer", "platform_model"]
+  },
+  {
+    "query_id": 74,
+    "prompt": "What regulatory risks does Apple face in the European Union related to App Store policies?",
+    "ambiguity_tier": 2,
+    "ground_truth": "web",
+    "prompt_tags": ["apple", "regulatory_risk", "EU", "current_web_or_local_doc", "DMA"]
+  },
+  {
+    "query_id": 75,
+    "prompt": "How is Cisco transitioning its business model from hardware sales to software subscriptions and recurring revenue?",
+    "ambiguity_tier": 2,
+    "ground_truth": "local",
+    "prompt_tags": ["cisco", "business_model_transition", "software_subscriptions", "local_doc_or_web_analysis", "strategy"]
+  },
+  {
+    "query_id": 76,
+    "prompt": "What were Wayfair's key financial performance metrics and customer trends for last fiscal year?",
+    "ambiguity_tier": 2,
+    "ground_truth": "local",
+    "prompt_tags": ["wayfair", "KPIs", "financials", "local_doc_or_web_summary", "ecommerce"]
+  },
+  {
+    "query_id": 77,
+    "prompt": "What is Dell's current market position in the enterprise server and PC market relative to HP and Lenovo?",
+    "ambiguity_tier": 2,
+    "ground_truth": "web",
+    "prompt_tags": ["dell", "market_position", "competitive_analysis", "current_market_or_local_doc", "enterprise_hardware"]
+  },
+  {
+    "query_id": 78,
+    "prompt": "How does HP Inc. split its revenue between the personal systems and printing segments?",
+    "ambiguity_tier": 2,
+    "ground_truth": "local",
+    "prompt_tags": ["hp", "segment_revenue", "personal_systems", "local_doc_or_web_summary", "printing"]
+  },
+  {
+    "query_id": 79,
+    "prompt": "What are the key financial highlights from Microsoft's annual financial report?",
+    "ambiguity_tier": 2,
+    "ground_truth": "local",
+    "prompt_tags": ["microsoft", "financial_highlights", "local_doc_or_web_summary", "annual_results", "financials"]
+  },
+  {
+    "query_id": 80,
+    "prompt": "What is GameStop's strategy for remaining relevant as gaming moves increasingly toward digital distribution?",
+    "ambiguity_tier": 2,
+    "ground_truth": "web",
+    "prompt_tags": ["gamestop", "digital_strategy", "competitive_positioning", "current_web_or_local_doc", "retail"]
+  },
+  {
+    "query_id": 81,
+    "prompt": "What's the deal with Apple?",
+    "ambiguity_tier": 3,
+    "ground_truth": "web",
+    "prompt_tags": ["apple", "open_ended", "highly_vague", "business_overview_or_web", "no_specific_intent"]
+  },
+  {
+    "query_id": 82,
+    "prompt": "How is Microsoft doing?",
+    "ambiguity_tier": 3,
+    "ground_truth": "web",
+    "prompt_tags": ["microsoft", "performance", "highly_vague", "fy2025_doc_or_current_web", "open_ended"]
+  },
+  {
+    "query_id": 83,
+    "prompt": "Tell me about Netflix's finances.",
+    "ambiguity_tier": 3,
+    "ground_truth": "local",
+    "prompt_tags": ["netflix", "bare_query", "financials", "highly_vague", "local_or_web_unclear"]
+  },
+  {
+    "query_id": 84,
+    "prompt": "What should I know about Uber before investing?",
+    "ambiguity_tier": 3,
+    "ground_truth": "web",
+    "prompt_tags": ["uber", "investment_research", "highly_vague", "10K_risk_or_web_analysis", "open_ended"]
+  },
+  {
+    "query_id": 85,
+    "prompt": "How is Visa's business?",
+    "ambiguity_tier": 3,
+    "ground_truth": "local",
+    "prompt_tags": ["visa", "bare_query", "performance", "highly_vague", "local_or_web_unclear"]
+  },
+  {
+    "query_id": 86,
+    "prompt": "What's IBM up to these days?",
+    "ambiguity_tier": 3,
+    "ground_truth": "web",
+    "prompt_tags": ["ibm", "open_ended", "highly_vague", "recent_news_or_doc_overview", "no_specific_intent"]
+  },
+  {
+    "query_id": 87,
+    "prompt": "What is Salesforce's growth?",
+    "ambiguity_tier": 3,
+    "ground_truth": "local",
+    "prompt_tags": ["salesforce", "bare_query", "growth", "highly_vague", "historical_or_current_unclear"]
+  },
+  {
+    "query_id": 88,
+    "prompt": "Tell me about Snowflake.",
+    "ambiguity_tier": 3,
+    "ground_truth": "web",
+    "prompt_tags": ["snowflake", "open_ended", "highly_vague", "business_overview_or_web", "no_specific_intent"]
+  },
+  {
+    "query_id": 89,
+    "prompt": "How is DoorDash performing?",
+    "ambiguity_tier": 3,
+    "ground_truth": "local",
+    "prompt_tags": ["doordash", "bare_query", "performance", "highly_vague", "local_or_web_unclear"]
+  },
+  {
+    "query_id": 90,
+    "prompt": "What's going on with Pinterest?",
+    "ambiguity_tier": 3,
+    "ground_truth": "web",
+    "prompt_tags": ["pinterest", "open_ended", "highly_vague", "recent_news_or_doc_overview", "no_specific_intent"]
+  },
+  {
+    "query_id": 91,
+    "prompt": "What does Qualcomm do?",
+    "ambiguity_tier": 3,
+    "ground_truth": "web",
+    "prompt_tags": ["qualcomm", "open_ended", "highly_vague", "business_overview_or_web", "no_specific_intent"]
+  },
+  {
+    "query_id": 92,
+    "prompt": "How is Roblox doing?",
+    "ambiguity_tier": 3,
+    "ground_truth": "local",
+    "prompt_tags": ["roblox", "bare_query", "performance", "highly_vague", "local_or_web_unclear"]
+  },
+  {
+    "query_id": 93,
+    "prompt": "What is Cisco's outlook?",
+    "ambiguity_tier": 3,
+    "ground_truth": "web",
+    "prompt_tags": ["cisco", "forward_looking", "highly_vague", "10K_guidance_or_analyst_web", "open_ended"]
+  },
+  {
+    "query_id": 94,
+    "prompt": "How is Dell's recent performance?",
+    "ambiguity_tier": 3,
+    "ground_truth": "local",
+    "prompt_tags": ["dell", "bare_query", "performance", "highly_vague", "historical_or_current_unclear"]
+  },
+  {
+    "query_id": 95,
+    "prompt": "Tell me about HP.",
+    "ambiguity_tier": 3,
+    "ground_truth": "web",
+    "prompt_tags": ["hp", "open_ended", "highly_vague", "business_overview_or_web", "no_specific_intent"]
+  },
+  {
+    "query_id": 96,
+    "prompt": "How is Wayfair's business going?",
+    "ambiguity_tier": 3,
+    "ground_truth": "local",
+    "prompt_tags": ["wayfair", "bare_query", "performance", "highly_vague", "local_or_web_unclear"]
+  },
+  {
+    "query_id": 97,
+    "prompt": "Is GameStop still relevant?",
+    "ambiguity_tier": 3,
+    "ground_truth": "web",
+    "prompt_tags": ["gamestop", "open_ended", "highly_vague", "business_viability_or_web_analysis", "no_specific_intent"]
+  },
+  {
+    "query_id": 98,
+    "prompt": "What are Apple's biggest risks?",
+    "ambiguity_tier": 3,
+    "ground_truth": "local",
+    "prompt_tags": ["apple", "bare_query", "risk_factors", "highly_vague", "10K_risk_or_web_analysis"]
+  },
+  {
+    "query_id": 99,
+    "prompt": "What's Microsoft's AI play?",
+    "ambiguity_tier": 3,
+    "ground_truth": "web",
+    "prompt_tags": ["microsoft", "AI_strategy", "highly_vague", "recent_news_or_local_doc", "open_ended"]
+  },
+  {
+    "query_id": 100,
+    "prompt": "What's the competitive landscape for Netflix?",
+    "ambiguity_tier": 3,
+    "ground_truth": "web",
+    "prompt_tags": ["netflix", "competitive_landscape", "highly_vague", "current_web_or_local_doc", "streaming"]
   }
 ]
