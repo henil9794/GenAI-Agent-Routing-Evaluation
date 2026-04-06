@@ -1,0 +1,19 @@
+router,query_id,prompt,ground_truth,predicted,ambiguity_tier
+rule_based,7,What has Adobe announced in the past month regarding new product launches?,web,local,1
+rule_based,8,Which Wall Street analysts have upgraded or downgraded Airbnb stock in the last 30 days?,web,uncertain,1
+rule_based,10,What new credit card product did American Express launch this quarter?,web,uncertain,1
+always_local,6,What is Amazon's stock price right now?,web,local,1
+always_local,7,What has Adobe announced in the past month regarding new product launches?,web,local,1
+always_local,8,Which Wall Street analysts have upgraded or downgraded Airbnb stock in the last 30 days?,web,local,1
+zero_shot_llm,1,"How many full-time and part-time employees did Amazon report as of December 31, 2025?",local,web,1
+zero_shot_llm,12,What are the main risks Airbnb faces as a business?,local,web,2
+zero_shot_llm,14,What is American Express's strategy for growing its international card services business?,local,web,2
+few_shot_llm,9,What is Alphabet's current trailing P/E ratio?,web,local,1
+few_shot_llm,13,How does Amazon Web Services compete against Microsoft Azure and Google Cloud?,web,local,2
+few_shot_llm,16,What does Adobe's Firefly generative AI model do and how is it used commercially?,local,web,2
+cot_llm,14,What is American Express's strategy for growing its international card services business?,local,web,2
+cot_llm,16,What does Adobe's Firefly generative AI model do and how is it used commercially?,local,web,2
+cot_llm,17,What are Airbnb's key financial performance metrics that investors track?,local,web,2
+langgraph_agent,12,What are the main risks Airbnb faces as a business?,local,web,2
+langgraph_agent,14,What is American Express's strategy for growing its international card services business?,local,web,2
+langgraph_agent,16,What does Adobe's Firefly generative AI model do and how is it used commercially?,local,web,2

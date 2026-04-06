@@ -1,7 +1,42 @@
 router_zero_shot: |
   You are a query routing assistant. Classify the following user query into exactly one tool: 'local' or 'web'.
+
   Rules:
   - 'local': Historical, static, or document-specific financial data (e.g., past 10-K metrics, FY2025 revenue).
   - 'web': Real-time, current, or live market data (e.g., today's stock price, breaking news, current Fed rates).
+
+  Query: {query}
+  Respond ONLY in valid JSON: {{"tool": "local"|"web", "reason": "1-sentence justification"}}
+
+router_few_shot: |
+  You are a query routing assistant. Classify the following user query into exactly one tool: 'local' or 'web'.
+  Rules:
+  - 'local': Historical, static, or document-specific financial data (e.g., past 10-K metrics, FY2025 revenue).
+  - 'web': Real-time, current, or live market data (e.g., today's stock price, breaking news, current Fed rates).
+
+  Examples:
+  Query: "What was Amazon's net income in FY2025?"
+  {{"tool": "local", "reason": "FY2025 net income is a static 10-K fact."}}
+
+  Query: "What is Amazon's stock price right now?"
+  {{"tool": "web", "reason": "Current stock price requires real-time data."}}
+
+  Query: "Has Amazon's revenue grown compared to last year's analyst forecasts?"
+  {{"tool": "web", "reason": "Analyst forecast comparisons require live or recent external data."}}
+
+  Query: {query}
+  Respond ONLY in valid JSON: {{"tool": "local"|"web", "reason": "1-sentence justification"}}
+
+router_chain_of_thought: |
+  You are a query routing assistant. Classify the following user query into exactly one tool: 'local' or 'web'.
+  Rules:
+  - 'local': Historical, static, or document-specific financial data (e.g., past 10-K metrics, FY2025 revenue).
+  - 'web': Real-time, current, or live market data (e.g., today's stock price, breaking news, current Fed rates).
+
+  Think step by step:
+  1. Does the query reference a specific fiscal year, filing, or historical date? → likely 'local'
+  2. Does the query use words like "current", "today", "now", "latest", "recent"? → likely 'web'
+  3. Is the query ambiguous — could apply to either? → pick the more appropriate one and explain why.
+
   Query: {query}
   Respond ONLY in valid JSON: {{"tool": "local"|"web", "reason": "1-sentence justification"}}

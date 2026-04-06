@@ -30,7 +30,14 @@ def router_node(state: RouterState, model_name: str) -> RouterState:
         content = response.choices[0].message.content.strip()
         # Strip markdown code fences that larger models add
         content = re.sub(r"^```(?:json)?\s*|\s*```$", "", content, flags=re.DOTALL)
-        data = json.loads(content)
+        try:
+            data = json.loads(content)
+        except json.JSONDecodeError:
+            json_match = re.search(r'\{.*\}', content, re.DOTALL)
+            if json_match:
+                data = json.loads(json_match.group())
+            else:
+                raise
 
         return {**state, "routing_decision": data["tool"], "reasoning": data.get("reason", "")}
     except Exception:

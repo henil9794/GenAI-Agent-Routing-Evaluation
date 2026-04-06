@@ -1,23 +1,79 @@
 {
   "model": "google/gemma-3-27b-it",
   "overall_accuracy": {
-    "rule_based": 0.36,
-    "zero_shot_llm": 0.8,
-    "langgraph_agent": 0.77
+    "rule_based": 0.8780487804878049,
+    "always_local": 0.52,
+    "zero_shot_llm": 0.8200000000000001,
+    "few_shot_llm": 0.79,
+    "cot_llm": 0.75,
+    "langgraph_agent": 0.8
+  },
+  "coverage": {
+    "rule_based": 0.41,
+    "always_local": 1.0,
+    "zero_shot_llm": 1.0,
+    "few_shot_llm": 1.0,
+    "cot_llm": 1.0,
+    "langgraph_agent": 1.0
   },
   "rule_based_tier_accuracy": {
-    "1": 0.7,
-    "2": 0.1333333333333333,
-    "3": 0.1333333333333333
+    "1": 0.9,
+    "2": 0.9666666666666667,
+    "3": 1.0
+  },
+  "rule_based_uncertain_rate": {
+    "1": 0.2,
+    "2": 0.8333333333333334,
+    "3": 0.8666666666666667
+  },
+  "always_local_tier_accuracy": {
+    "1": 0.5,
+    "2": 0.6333333333333333,
+    "3": 0.43333333333333335
+  },
+  "always_local_uncertain_rate": {
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.0
   },
   "zero_shot_llm_tier_accuracy": {
     "1": 0.95,
-    "2": 0.8,
+    "2": 0.8666666666666667,
     "3": 0.6
   },
-  "langgraph_agent_tier_accuracy": {
-    "1": 0.95,
+  "zero_shot_llm_uncertain_rate": {
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.0
+  },
+  "few_shot_llm_tier_accuracy": {
+    "1": 0.9,
     "2": 0.7666666666666666,
-    "3": 0.5333333333333333
+    "3": 0.6666666666666667
+  },
+  "few_shot_llm_uncertain_rate": {
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.0
+  },
+  "cot_llm_tier_accuracy": {
+    "1": 0.9,
+    "2": 0.7,
+    "3": 0.6
+  },
+  "cot_llm_uncertain_rate": {
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.0
+  },
+  "langgraph_agent_tier_accuracy": {
+    "1": 0.975,
+    "2": 0.8,
+    "3": 0.5666666666666667
+  },
+  "langgraph_agent_uncertain_rate": {
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.0
   }
 }

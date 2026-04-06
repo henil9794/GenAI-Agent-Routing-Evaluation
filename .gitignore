@@ -7,13 +7,8 @@ __pycache__/
 *.egg-info/
 dist/
 build/
-.venv/
-venv/
-env/
-data/raw*
 data/tavily_cache.json
 tavily_cache.json
 *.chroma/
 chroma_db/
 .DS_Store
-*.csv

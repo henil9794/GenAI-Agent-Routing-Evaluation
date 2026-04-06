@@ -1,0 +1,54 @@
+[
+  {
+    "query_id": 1,
+    "prompt": "How many full-time and part-time employees did Amazon report as of December 31, 2025?",
+    "ambiguity_tier": 1,
+    "ground_truth": "local",
+    "prompt_tags": [
+      "amazon",
+      "headcount",
+      "10K_fact",
+      "specific_date",
+      "local_doc"
+    ]
+  },
+  {
+    "query_id": 6,
+    "prompt": "What is Amazon's stock price right now?",
+    "ambiguity_tier": 1,
+    "ground_truth": "web",
+    "prompt_tags": [
+      "amazon",
+      "stock_price",
+      "real_time",
+      "financial_market",
+      "web_only"
+    ]
+  },
+  {
+    "query_id": 20,
+    "prompt": "What revenue segments does Alphabet break out in its financial reporting?",
+    "ambiguity_tier": 2,
+    "ground_truth": "local",
+    "prompt_tags": [
+      "alphabet",
+      "revenue_segments",
+      "local_doc_or_web_summary",
+      "google_services",
+      "google_cloud"
+    ]
+  },
+  {
+    "query_id": 30,
+    "prompt": "What is Alphabet's moonshots strategy?",
+    "ambiguity_tier": 3,
+    "ground_truth": "local",
+    "prompt_tags": [
+      "alphabet",
+      "bare_query",
+      "other_bets",
+      "highly_vague",
+      "local_doc_or_recent_news"
+    ]
+  }
+]
