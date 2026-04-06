@@ -3,10 +3,10 @@
   "overall_accuracy": {
     "rule_based": 0.8780487804878049,
     "always_local": 0.52,
-    "zero_shot_llm": 0.72,
-    "few_shot_llm": 0.74,
-    "cot_llm": 0.73,
-    "langgraph_agent": 0.71
+    "zero_shot_llm": 0.84,
+    "few_shot_llm": 0.84,
+    "cot_llm": 0.84,
+    "langgraph_agent": 0.84
   },
   "coverage": {
     "rule_based": 0.41,
@@ -39,7 +39,7 @@
   "zero_shot_llm_tier_accuracy": {
     "1": 1.0,
     "2": 0.7333333333333334,
-    "3": 0.33333333333333337
+    "3": 0.7333333333333334
   },
   "zero_shot_llm_uncertain_rate": {
     "1": 0.0,
@@ -48,8 +48,8 @@
   },
   "few_shot_llm_tier_accuracy": {
     "1": 1.0,
-    "2": 0.8666666666666667,
-    "3": 0.2666666666666667
+    "2": 0.8333333333333334,
+    "3": 0.6333333333333333
   },
   "few_shot_llm_uncertain_rate": {
     "1": 0.0,
@@ -59,7 +59,7 @@
   "cot_llm_tier_accuracy": {
     "1": 1.0,
     "2": 0.8,
-    "3": 0.30000000000000004
+    "3": 0.6666666666666667
   },
   "cot_llm_uncertain_rate": {
     "1": 0.0,
@@ -69,7 +69,7 @@
   "langgraph_agent_tier_accuracy": {
     "1": 1.0,
     "2": 0.7333333333333334,
-    "3": 0.30000000000000004
+    "3": 0.7333333333333334
   },
   "langgraph_agent_uncertain_rate": {
     "1": 0.0,

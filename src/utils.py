@@ -2,10 +2,10 @@ import os
 import json
 import yaml
 import logging
-from dotenv import load_dotenv
+from dotenv import load_dotenv, find_dotenv
 from openai import OpenAI
 
-load_dotenv()
+load_dotenv(find_dotenv())
 _client_cache: dict = {}
 
 def load_config():
@@ -24,7 +24,7 @@ def get_openai_client(config):
             base_url=config["llm"]["base_url"],
             api_key=os.getenv(config["llm"]["api_key_env"]),
             timeout=30.0,   # hard timeout per request
-            max_retries=3,  # auto-retry on 429/5xx
+            max_retries=3,  # retry on transient errors
         )
     return _client_cache[key]
 
