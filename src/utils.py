@@ -17,7 +17,7 @@ def load_prompts():
         return yaml.safe_load(f)
 
 
-def get_openai_client(config):
+def get_openrouter_client(config):
     key = config["llm"]["base_url"]
     if key not in _client_cache:
         _client_cache[key] = OpenAI(

@@ -1,6 +1,6 @@
 import re
 import json
-from src.utils import get_openai_client, load_config, load_prompts
+from src.utils import get_openrouter_client, load_config, load_prompts
 
 config = load_config()
 prompts = load_prompts()
@@ -20,7 +20,7 @@ def rule_based_router(query: str) -> str:
     return "uncertain"
 
 def zero_shot_llm_router(query: str, model_name: str) -> dict:
-    client = get_openai_client(config)
+    client = get_openrouter_client(config)
     prompt = prompts["router_zero_shot"].format(query=query)
     response = client.chat.completions.create(
         model=model_name,
@@ -36,7 +36,7 @@ def zero_shot_llm_router(query: str, model_name: str) -> dict:
         return {"tool": "uncertain", "reason": "LLM JSON parse failed"}
 
 def few_shot_llm_router(query: str, model_name: str) -> dict:
-    client = get_openai_client(config)
+    client = get_openrouter_client(config)
     prompt = prompts["router_few_shot"].format(query=query)
     response = client.chat.completions.create(
         model=model_name,
@@ -53,7 +53,7 @@ def few_shot_llm_router(query: str, model_name: str) -> dict:
 
 
 def cot_llm_router(query: str, model_name: str) -> dict:
-    client = get_openai_client(config)
+    client = get_openrouter_client(config)
     prompt = prompts["router_chain_of_thought"].format(query=query)
     response = client.chat.completions.create(
         model=model_name,

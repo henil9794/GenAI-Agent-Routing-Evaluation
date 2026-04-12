@@ -2,7 +2,7 @@ import json
 import re
 from typing import TypedDict, Literal, List, Dict, Any
 from langgraph.graph import StateGraph, START, END
-from src.utils import get_openai_client, load_config, load_prompts
+from src.utils import get_openrouter_client, load_config, load_prompts
 from src.tools import local_retriever, web_searcher
 
 config = load_config()
@@ -16,7 +16,7 @@ class RouterState(TypedDict):
     final_answer: str
 
 def router_node(state: RouterState, model_name: str) -> RouterState:
-    client = get_openai_client(config)
+    client = get_openrouter_client(config)
     prompt = prompts["router_zero_shot"].format(query=state["query"])
     response = client.chat.completions.create(
         model=model_name,
@@ -52,7 +52,7 @@ def web_search_node(state: RouterState) -> RouterState:
     return {**state, "retrieved_docs": results}
 
 def synthesizer_node(state: RouterState, model_name: str) -> RouterState:
-    client = get_openai_client(config)
+    client = get_openrouter_client(config)
     docs = state.get("retrieved_docs", [])
 
     if not docs:
@@ -111,4 +111,9 @@ def build_langgraph_agent(model_name: str, collection=None):
     workflow.add_edge("web_search", "synthesizer")
     workflow.add_edge("synthesizer", END)
 
-    return workflow.compile()
+    app = workflow.compile()
+
+    # get the workflow diagram
+    app.get_graph().draw_mermaid_png(output_file_path="pipeline.png")
+
+    return app
