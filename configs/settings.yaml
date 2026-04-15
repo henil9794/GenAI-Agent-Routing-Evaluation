@@ -1,0 +1,30 @@
+llm:
+  models:
+    primary: "meta-llama/llama-3-8b-instruct"
+    secondary: "openai/gpt-4o-mini"
+    tertiary: "google/gemma-3-27b-it"
+    quaternary: "anthropic/claude-sonnet-4.6"
+  base_url: "https://openrouter.ai/api/v1"
+  api_key_env: "OPENROUTER_API_KEY"
+  temperature: 0.0  # Deterministic for routing consistency
+  max_tokens: 150
+
+embeddings:
+  model: "sentence-transformers/all-MiniLM-L6-v2"
+  device: "cpu"
+
+vector_db:
+  persist_directory: "./data/processed/chroma_db"
+  collection_name: "tech_10k_docs"
+
+tavily:
+  api_key_env: "TAVILY_API_KEY"
+  max_results: 3
+  search_depth: "basic"
+
+dataset:
+  path: "./data/dataset/prompts_dataset.json"
+
+chunking:
+  chunk_size: 500
+  chunk_overlap: 50
